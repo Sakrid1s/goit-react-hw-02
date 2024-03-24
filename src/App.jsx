@@ -1,7 +1,8 @@
 import { useState } from 'react';
 import './App.css';
-import Description from './components/description/description';
+import Description from './components/description/Description';
 import Options from './components/options/Options';
+import Feedback from './components/feedback/Feedback';
 
 function App() {
   const [feedback, setFeedback] = useState({
@@ -14,7 +15,11 @@ function App() {
     <>
       <Description />
       <Options />
-      <Feedback />
+      <Feedback
+        good={feedback.good}
+        bad={feedback.bad}
+        neutral={feedback.neutral}
+      />
     </>
   );
 }
