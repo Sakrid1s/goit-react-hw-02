@@ -1,0 +1,12 @@
+.optionsContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+  padding-bottom: 10px;
+}
+
+.btn {
+  width: 80px;
+  height: 40px;
+}
